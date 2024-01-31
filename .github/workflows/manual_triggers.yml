@@ -1,0 +1,11 @@
+name: manual_trigger_workflow
+
+on: workflow_dispatch
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+    
+        steps:
+        - name:  Checkout code
+          run: echo "manual trigger workflow"
